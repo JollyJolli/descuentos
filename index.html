@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Calculadora de Descuentos</h1>
+        <p class="subtitle">Calcula tus ahorros al instante</p>
+    </header>
+
+    <main class="main">
+        <section class="calculator">
+            <div class="calculator__form">
+                <div class="input-group">
+                    <label for="price">Precio Original</label>
+                    <div class="input-wrapper">
+                        <span class="currency-symbol">$</span>
+                        <input type="number" id="price" placeholder="0.00" min="0" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="discount">Porcentaje de Descuento</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="discount" placeholder="0" min="0" max="100" required>
+                        <span class="percentage-symbol">%</span>
+                    </div>
+                </div>
+
+                <button id="calculate" class="calculate-btn">Calcular Descuento</button>
+            </div>
+
+            <div class="result" id="result">
+                <div class="result__item">
+                    <span class="result__label">Descuento:</span>
+                    <span class="result__value" id="savings">$0.00</span>
+                </div>
+                <div class="result__item">
+                    <span class="result__label">Precio Final:</span>
+                    <span class="result__value" id="final-price">$0.00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Diseñado con ❤️ para hacer tus compras más inteligentes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
